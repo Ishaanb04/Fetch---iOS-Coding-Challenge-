@@ -16,9 +16,13 @@ This is a native iOS application that allows users to browse dessert recipes usi
 
 ## Screenshots
 <p align="center">
+    <img src="https://github.com/Ishaanb04/Fetch---iOS-Coding-Challenge-/assets/32113863/a3ca99c3-194e-44dc-8ac1-30bea807d618" alt="Meal Detail" width="250">
+    <div><\div>
     <img src="https://github.com/Ishaanb04/Fetch---iOS-Coding-Challenge-/assets/32113863/0de775e8-e50b-43b4-921f-ad6c2dc8cff0" alt="Meals List" width="250">
+    <div><\div>
     <img src="https://github.com/Ishaanb04/Fetch---iOS-Coding-Challenge-/assets/32113863/6d8a02a9-f73d-4f4f-9649-9d9e233a7e63" alt="Meal Detail" width="250">
-  <img src="https://github.com/Ishaanb04/Fetch---iOS-Coding-Challenge-/assets/32113863/a3ca99c3-194e-44dc-8ac1-30bea807d618" alt="Meal Detail" width="250">
+  <div><\div>
   <img src="https://github.com/Ishaanb04/Fetch---iOS-Coding-Challenge-/assets/32113863/8f781fe2-c84e-484f-a007-c8d3600403e6" alt="Meal Detail" width="250">
+      <div><\div>
 </p>
 
