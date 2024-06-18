@@ -112,7 +112,6 @@
 				4C1F29882C2179A20032DBD1 /* Assets.xcassets */,
 				4C3079FD2C217CF1004933DA /* Core */,
 				4C1F298A2C2179A20032DBD1 /* Preview Content */,
-				4C3079FE2C217CF5004933DA /* Shared */,
 			);
 			path = "Fetch - iOS Coding Challenge";
 			sourceTree = "<group>";
@@ -136,9 +135,10 @@
 		4C3079FD2C217CF1004933DA /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				4C307A0E2C2180B0004933DA /* Services */,
 				4C307A002C217D45004933DA /* DetailRecipe */,
 				4C3079FF2C217D09004933DA /* MainRecipe */,
+				4C307A0E2C2180B0004933DA /* Services */,
+				4C3079FE2C217CF5004933DA /* Shared */,
 			);
 			path = Core;
 			sourceTree = "<group>";
