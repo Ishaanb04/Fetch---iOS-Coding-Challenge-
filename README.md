@@ -9,6 +9,8 @@ This is a native iOS application that allows users to browse dessert recipes usi
 - Navigates to a detail view with meal name, instructions, and ingredients when a meal is selected.
 - Filters out any null or empty values from the API before displaying them.
 - Uses SwiftUI for the user interface.
+- Implements a generic way to fetch and decode data from an endpoint to avoid code duplication.
+- Utilizes service and mock service using dependency injection and SOLID principles.
 
 ## API Endpoints
 - [Dessert Meals List](https://themealdb.com/api/json/v1/1/filter.php?c=Dessert)
