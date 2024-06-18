@@ -15,7 +15,7 @@ This is a native iOS application that allows users to browse dessert recipes usi
 - [Meal Details](https://themealdb.com/api/json/v1/1/lookup.php?i=MEAL_ID)
 
 ## Screenshots
-<p align="center">
+<p>
     <img src="https://github.com/Ishaanb04/Fetch---iOS-Coding-Challenge-/assets/32113863/a3ca99c3-194e-44dc-8ac1-30bea807d618" alt="Meal Detail" width="250">
     <div>
     <img src="https://github.com/Ishaanb04/Fetch---iOS-Coding-Challenge-/assets/32113863/0de775e8-e50b-43b4-921f-ad6c2dc8cff0" alt="Meals List" width="250">
