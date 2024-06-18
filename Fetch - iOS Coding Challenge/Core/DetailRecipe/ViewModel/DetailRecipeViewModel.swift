@@ -9,7 +9,6 @@ import Foundation
 
 class DetailRecipeViewModel: ObservableObject {
     @Published var recipe: Recipe?
-    @Published var customIngredient: [CustomIngredient] = []
     let service: RecipeDataServiceProtocol
     let id: String
     init(service: RecipeDataServiceProtocol, id: String) {
@@ -24,7 +23,6 @@ class DetailRecipeViewModel: ObservableObject {
     func fetchRecipeDetails() async {
         do {
             recipe = try await service.fetchRecipeDetails(with: id)
-            customIngredient = recipe?.ingredients.map { CustomIngredient(ingredient: $0) } ?? []
         } catch let error as RecipeAPIError {
             print("DEBUG: \(error.description)")
         } catch {
@@ -33,7 +31,3 @@ class DetailRecipeViewModel: ObservableObject {
     }
 }
 
-struct CustomIngredient: Identifiable {
-    let id = UUID().uuidString
-    var ingredient: Ingredient
-}

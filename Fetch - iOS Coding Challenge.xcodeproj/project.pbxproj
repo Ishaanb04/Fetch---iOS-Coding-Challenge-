@@ -30,6 +30,8 @@
 		4C307A3D2C21C779004933DA /* DetailRecipeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C307A3B2C21C779004933DA /* DetailRecipeViewModel.swift */; };
 		4C307A3F2C21CE0F004933DA /* DetailRecipeImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C307A3E2C21CE0F004933DA /* DetailRecipeImage.swift */; };
 		4C39D2772C21D15A00B41C5B /* MealImageModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C39D2762C21D15A00B41C5B /* MealImageModifier.swift */; };
+		4C39D2792C21DB8B00B41C5B /* TextDataRecipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C39D2782C21DB8B00B41C5B /* TextDataRecipe.swift */; };
+		4C39D27A2C21DB8B00B41C5B /* TextDataRecipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C39D2782C21DB8B00B41C5B /* TextDataRecipe.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +66,7 @@
 		4C307A3B2C21C779004933DA /* DetailRecipeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRecipeViewModel.swift; sourceTree = "<group>"; };
 		4C307A3E2C21CE0F004933DA /* DetailRecipeImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRecipeImage.swift; sourceTree = "<group>"; };
 		4C39D2762C21D15A00B41C5B /* MealImageModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealImageModifier.swift; sourceTree = "<group>"; };
+		4C39D2782C21DB8B00B41C5B /* TextDataRecipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextDataRecipe.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -251,6 +254,7 @@
 			isa = PBXGroup;
 			children = (
 				4C307A322C21A968004933DA /* TestDataAllMeals.swift */,
+				4C39D2782C21DB8B00B41C5B /* TextDataRecipe.swift */,
 			);
 			path = "Fetch - iOS Coding ChallengeTests";
 			sourceTree = "<group>";
@@ -364,6 +368,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C39D2792C21DB8B00B41C5B /* TextDataRecipe.swift in Sources */,
 				4C307A222C2192AD004933DA /* ImageCache.swift in Sources */,
 				4C307A242C219C13004933DA /* MainMealView.swift in Sources */,
 				4C1F29852C2179A10032DBD1 /* Fetch___iOS_Coding_ChallengeApp.swift in Sources */,
@@ -388,6 +393,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C39D27A2C21DB8B00B41C5B /* TextDataRecipe.swift in Sources */,
 				4C307A3A2C21C3A6004933DA /* DetailRecipe.swift in Sources */,
 				4C307A342C21A968004933DA /* TestDataAllMeals.swift in Sources */,
 				4C307A372C21C210004933DA /* DetailRecipeView.swift in Sources */,
