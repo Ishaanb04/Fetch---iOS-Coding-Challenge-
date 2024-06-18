@@ -22,6 +22,7 @@ extension HTTPDataDownloader {
 
     func getHTTPData(with url: String) async throws -> Data {
         guard let url = URL(string: url) else {
+            
             throw RecipeAPIError.invalidURL
         }
         do {

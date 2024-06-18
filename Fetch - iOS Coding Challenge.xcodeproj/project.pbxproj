@@ -20,7 +20,27 @@
 		4C307A202C2192A0004933DA /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C307A1F2C2192A0004933DA /* ImageLoader.swift */; };
 		4C307A222C2192AD004933DA /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C307A212C2192AD004933DA /* ImageCache.swift */; };
 		4C307A242C219C13004933DA /* MainMealView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C307A232C219C13004933DA /* MainMealView.swift */; };
+		4C307A332C21A968004933DA /* TestDataAllMeals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C307A322C21A968004933DA /* TestDataAllMeals.swift */; };
+		4C307A342C21A968004933DA /* TestDataAllMeals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C307A322C21A968004933DA /* TestDataAllMeals.swift */; };
+		4C307A362C21C210004933DA /* DetailRecipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C307A352C21C210004933DA /* DetailRecipeView.swift */; };
+		4C307A372C21C210004933DA /* DetailRecipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C307A352C21C210004933DA /* DetailRecipeView.swift */; };
+		4C307A392C21C3A6004933DA /* DetailRecipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C307A382C21C3A6004933DA /* DetailRecipe.swift */; };
+		4C307A3A2C21C3A6004933DA /* DetailRecipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C307A382C21C3A6004933DA /* DetailRecipe.swift */; };
+		4C307A3C2C21C779004933DA /* DetailRecipeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C307A3B2C21C779004933DA /* DetailRecipeViewModel.swift */; };
+		4C307A3D2C21C779004933DA /* DetailRecipeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C307A3B2C21C779004933DA /* DetailRecipeViewModel.swift */; };
+		4C307A3F2C21CE0F004933DA /* DetailRecipeImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C307A3E2C21CE0F004933DA /* DetailRecipeImage.swift */; };
+		4C39D2772C21D15A00B41C5B /* MealImageModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C39D2762C21D15A00B41C5B /* MealImageModifier.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4C307A2D2C21A897004933DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4C1F29792C2179A10032DBD1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4C1F29802C2179A10032DBD1;
+			remoteInfo = "Fetch - iOS Coding Challenge";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		4C1F29812C2179A10032DBD1 /* Fetch - iOS Coding Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fetch - iOS Coding Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -37,10 +57,24 @@
 		4C307A1F2C2192A0004933DA /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
 		4C307A212C2192AD004933DA /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
 		4C307A232C219C13004933DA /* MainMealView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMealView.swift; sourceTree = "<group>"; };
+		4C307A292C21A897004933DA /* Fetch - iOS Coding ChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Fetch - iOS Coding ChallengeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C307A322C21A968004933DA /* TestDataAllMeals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestDataAllMeals.swift; sourceTree = "<group>"; };
+		4C307A352C21C210004933DA /* DetailRecipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRecipeView.swift; sourceTree = "<group>"; };
+		4C307A382C21C3A6004933DA /* DetailRecipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRecipe.swift; sourceTree = "<group>"; };
+		4C307A3B2C21C779004933DA /* DetailRecipeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRecipeViewModel.swift; sourceTree = "<group>"; };
+		4C307A3E2C21CE0F004933DA /* DetailRecipeImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRecipeImage.swift; sourceTree = "<group>"; };
+		4C39D2762C21D15A00B41C5B /* MealImageModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealImageModifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		4C1F297E2C2179A10032DBD1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C307A262C21A897004933DA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -54,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				4C1F29832C2179A10032DBD1 /* Fetch - iOS Coding Challenge */,
+				4C307A2A2C21A897004933DA /* Fetch - iOS Coding ChallengeTests */,
 				4C1F29822C2179A10032DBD1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -62,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				4C1F29812C2179A10032DBD1 /* Fetch - iOS Coding Challenge.app */,
+				4C307A292C21A897004933DA /* Fetch - iOS Coding ChallengeTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -136,6 +172,7 @@
 		4C307A012C217D5F004933DA /* View */ = {
 			isa = PBXGroup;
 			children = (
+				4C39D2752C21D13B00B41C5B /* Modifiers */,
 				4C307A072C217DC4004933DA /* MainRecipeView.swift */,
 				4C307A232C219C13004933DA /* MainMealView.swift */,
 			);
@@ -161,6 +198,8 @@
 		4C307A042C217D6C004933DA /* View */ = {
 			isa = PBXGroup;
 			children = (
+				4C307A352C21C210004933DA /* DetailRecipeView.swift */,
+				4C307A3E2C21CE0F004933DA /* DetailRecipeImage.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -168,6 +207,7 @@
 		4C307A052C217D70004933DA /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				4C307A3B2C21C779004933DA /* DetailRecipeViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -175,6 +215,7 @@
 		4C307A062C217D74004933DA /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				4C307A382C21C3A6004933DA /* DetailRecipe.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -206,6 +247,22 @@
 			path = Data;
 			sourceTree = "<group>";
 		};
+		4C307A2A2C21A897004933DA /* Fetch - iOS Coding ChallengeTests */ = {
+			isa = PBXGroup;
+			children = (
+				4C307A322C21A968004933DA /* TestDataAllMeals.swift */,
+			);
+			path = "Fetch - iOS Coding ChallengeTests";
+			sourceTree = "<group>";
+		};
+		4C39D2752C21D13B00B41C5B /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				4C39D2762C21D15A00B41C5B /* MealImageModifier.swift */,
+			);
+			path = Modifiers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -226,6 +283,24 @@
 			productReference = 4C1F29812C2179A10032DBD1 /* Fetch - iOS Coding Challenge.app */;
 			productType = "com.apple.product-type.application";
 		};
+		4C307A282C21A897004933DA /* Fetch - iOS Coding ChallengeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C307A2F2C21A897004933DA /* Build configuration list for PBXNativeTarget "Fetch - iOS Coding ChallengeTests" */;
+			buildPhases = (
+				4C307A252C21A897004933DA /* Sources */,
+				4C307A262C21A897004933DA /* Frameworks */,
+				4C307A272C21A897004933DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4C307A2E2C21A897004933DA /* PBXTargetDependency */,
+			);
+			name = "Fetch - iOS Coding ChallengeTests";
+			productName = "Fetch - iOS Coding ChallengeTests";
+			productReference = 4C307A292C21A897004933DA /* Fetch - iOS Coding ChallengeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -238,6 +313,11 @@
 				TargetAttributes = {
 					4C1F29802C2179A10032DBD1 = {
 						CreatedOnToolsVersion = 15.4;
+					};
+					4C307A282C21A897004933DA = {
+						CreatedOnToolsVersion = 15.4;
+						LastSwiftMigration = 1540;
+						TestTargetID = 4C1F29802C2179A10032DBD1;
 					};
 				};
 			};
@@ -255,6 +335,7 @@
 			projectRoot = "";
 			targets = (
 				4C1F29802C2179A10032DBD1 /* Fetch - iOS Coding Challenge */,
+				4C307A282C21A897004933DA /* Fetch - iOS Coding ChallengeTests */,
 			);
 		};
 /* End PBXProject section */
@@ -269,6 +350,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4C307A272C21A897004933DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -279,18 +367,43 @@
 				4C307A222C2192AD004933DA /* ImageCache.swift in Sources */,
 				4C307A242C219C13004933DA /* MainMealView.swift in Sources */,
 				4C1F29852C2179A10032DBD1 /* Fetch___iOS_Coding_ChallengeApp.swift in Sources */,
+				4C307A332C21A968004933DA /* TestDataAllMeals.swift in Sources */,
 				4C307A0D2C217FC8004933DA /* MainRecipeViewModel.swift in Sources */,
 				4C307A172C218871004933DA /* RecipeAPIError.swift in Sources */,
+				4C39D2772C21D15A00B41C5B /* MealImageModifier.swift in Sources */,
 				4C307A112C2180F7004933DA /* RecipeDataService.swift in Sources */,
 				4C307A1B2C218B8A004933DA /* HTTPDataDownloader.swift in Sources */,
+				4C307A3C2C21C779004933DA /* DetailRecipeViewModel.swift in Sources */,
+				4C307A362C21C210004933DA /* DetailRecipeView.swift in Sources */,
+				4C307A3F2C21CE0F004933DA /* DetailRecipeImage.swift in Sources */,
 				4C307A202C2192A0004933DA /* ImageLoader.swift in Sources */,
+				4C307A392C21C3A6004933DA /* DetailRecipe.swift in Sources */,
 				4C307A132C218499004933DA /* MockRecipeDataService.swift in Sources */,
 				4C307A0B2C217E1C004933DA /* Meal.swift in Sources */,
 				4C307A082C217DC4004933DA /* MainRecipeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4C307A252C21A897004933DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C307A3A2C21C3A6004933DA /* DetailRecipe.swift in Sources */,
+				4C307A342C21A968004933DA /* TestDataAllMeals.swift in Sources */,
+				4C307A372C21C210004933DA /* DetailRecipeView.swift in Sources */,
+				4C307A3D2C21C779004933DA /* DetailRecipeViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4C307A2E2C21A897004933DA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4C1F29802C2179A10032DBD1 /* Fetch - iOS Coding Challenge */;
+			targetProxy = 4C307A2D2C21A897004933DA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		4C1F298D2C2179A20032DBD1 /* Debug */ = {
@@ -345,7 +458,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -402,7 +515,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -470,6 +583,45 @@
 			};
 			name = Release;
 		};
+		4C307A302C21A897004933DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P4WXW6TMCC;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ibhasin.Fetch---iOS-Coding-ChallengeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fetch - iOS Coding Challenge.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Fetch - iOS Coding Challenge";
+			};
+			name = Debug;
+		};
+		4C307A312C21A897004933DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P4WXW6TMCC;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ibhasin.Fetch---iOS-Coding-ChallengeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fetch - iOS Coding Challenge.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Fetch - iOS Coding Challenge";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -487,6 +639,15 @@
 			buildConfigurations = (
 				4C1F29902C2179A20032DBD1 /* Debug */,
 				4C1F29912C2179A20032DBD1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4C307A2F2C21A897004933DA /* Build configuration list for PBXNativeTarget "Fetch - iOS Coding ChallengeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C307A302C21A897004933DA /* Debug */,
+				4C307A312C21A897004933DA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -8,26 +8,43 @@
 import SwiftUI
 
 struct MainRecipeView: View {
-    @ObservedObject private var vm = MainRecipeViewModel(service: RecipeDataService())
+    let service: RecipeDataServiceProtocol
+    @StateObject private var viewModel: MainRecipeViewModel
+
+    init(service: RecipeDataServiceProtocol) {
+        self.service = service
+        self._viewModel = StateObject(wrappedValue: MainRecipeViewModel(service: service))
+    }
+
     var body: some View {
-        VStack {
-            ScrollView {
-                VStack {
-                    LazyVGrid(columns: [.init(), .init()], content: {
-                        ForEach(vm.meals) { meal in
-                            MainMealView(service: vm.service, meal: meal)
-                        }
-                    })
+        NavigationStack {
+            VStack {
+                ScrollView {
+                    gridView
+                        .padding()
                 }
-                .padding()
+                .navigationDestination(for: Meal.self) { meal in
+                    DetailRecipeView(service: service, id: meal.id)
+                }
+            }
+            .task {
+                await viewModel.fetchMeals()
             }
         }
-        .task {
-            await vm.fetchMeals()
-        }
+        .tint(.primary)
+    }
+
+    var gridView: some View {
+        LazyVGrid(columns: [.init(), .init()], content: {
+            ForEach(viewModel.meals) { meal in
+                NavigationLink(value: meal) {
+                    MainMealView(service: service, meal: meal)
+                }
+            }
+        })
     }
 }
 
 #Preview {
-    MainRecipeView()
+    MainRecipeView(service: MockRecipeDataService())
 }

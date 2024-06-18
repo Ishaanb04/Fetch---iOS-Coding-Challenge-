@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Meals: Codable {
+struct Meals: Codable, Hashable {
     let allMeals: [Meal]
 
     enum CodingKeys: String, CodingKey {
@@ -15,7 +15,7 @@ struct Meals: Codable {
     }
 }
 
-struct Meal: Codable, Identifiable {
+struct Meal: Codable, Identifiable, Hashable {
     let id: String
     let thumbnailURL: String
     let name: String
