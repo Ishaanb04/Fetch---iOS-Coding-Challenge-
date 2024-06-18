@@ -3,10 +3,10 @@
 import SwiftUI
 
 @main
-struct ___PACKAGENAME:identifier___App: App {
+struct Fetch___iOS_Coding_ChallengeApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainRecipeView()
         }
     }
 }

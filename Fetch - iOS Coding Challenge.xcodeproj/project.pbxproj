@@ -8,17 +8,29 @@
 
 /* Begin PBXBuildFile section */
 		4C1F29852C2179A10032DBD1 /* Fetch___iOS_Coding_ChallengeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1F29842C2179A10032DBD1 /* Fetch___iOS_Coding_ChallengeApp.swift */; };
-		4C1F29872C2179A10032DBD1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1F29862C2179A10032DBD1 /* ContentView.swift */; };
 		4C1F29892C2179A20032DBD1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C1F29882C2179A20032DBD1 /* Assets.xcassets */; };
 		4C1F298C2C2179A20032DBD1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C1F298B2C2179A20032DBD1 /* Preview Assets.xcassets */; };
+		4C307A082C217DC4004933DA /* MainRecipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C307A072C217DC4004933DA /* MainRecipeView.swift */; };
+		4C307A0B2C217E1C004933DA /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C307A0A2C217E1C004933DA /* Meal.swift */; };
+		4C307A0D2C217FC8004933DA /* MainRecipeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C307A0C2C217FC8004933DA /* MainRecipeViewModel.swift */; };
+		4C307A112C2180F7004933DA /* RecipeDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C307A102C2180F7004933DA /* RecipeDataService.swift */; };
+		4C307A132C218499004933DA /* MockRecipeDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C307A122C218499004933DA /* MockRecipeDataService.swift */; };
+		4C307A172C218871004933DA /* RecipeAPIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C307A162C218871004933DA /* RecipeAPIError.swift */; };
+		4C307A1B2C218B8A004933DA /* HTTPDataDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C307A1A2C218B8A004933DA /* HTTPDataDownloader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4C1F29812C2179A10032DBD1 /* Fetch - iOS Coding Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fetch - iOS Coding Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C1F29842C2179A10032DBD1 /* Fetch___iOS_Coding_ChallengeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Fetch___iOS_Coding_ChallengeApp.swift"; sourceTree = "<group>"; };
-		4C1F29862C2179A10032DBD1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4C1F29882C2179A20032DBD1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4C1F298B2C2179A20032DBD1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4C307A072C217DC4004933DA /* MainRecipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRecipeView.swift; sourceTree = "<group>"; };
+		4C307A0A2C217E1C004933DA /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
+		4C307A0C2C217FC8004933DA /* MainRecipeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRecipeViewModel.swift; sourceTree = "<group>"; };
+		4C307A102C2180F7004933DA /* RecipeDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDataService.swift; sourceTree = "<group>"; };
+		4C307A122C218499004933DA /* MockRecipeDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockRecipeDataService.swift; sourceTree = "<group>"; };
+		4C307A162C218871004933DA /* RecipeAPIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeAPIError.swift; sourceTree = "<group>"; };
+		4C307A1A2C218B8A004933DA /* HTTPDataDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPDataDownloader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +63,11 @@
 		4C1F29832C2179A10032DBD1 /* Fetch - iOS Coding Challenge */ = {
 			isa = PBXGroup;
 			children = (
-				4C1F29842C2179A10032DBD1 /* Fetch___iOS_Coding_ChallengeApp.swift */,
-				4C1F29862C2179A10032DBD1 /* ContentView.swift */,
+				4C3079FC2C217CE5004933DA /* App */,
 				4C1F29882C2179A20032DBD1 /* Assets.xcassets */,
+				4C3079FD2C217CF1004933DA /* Core */,
 				4C1F298A2C2179A20032DBD1 /* Preview Content */,
+				4C3079FE2C217CF5004933DA /* Shared */,
 			);
 			path = "Fetch - iOS Coding Challenge";
 			sourceTree = "<group>";
@@ -65,6 +78,107 @@
 				4C1F298B2C2179A20032DBD1 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4C3079FC2C217CE5004933DA /* App */ = {
+			isa = PBXGroup;
+			children = (
+				4C1F29842C2179A10032DBD1 /* Fetch___iOS_Coding_ChallengeApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		4C3079FD2C217CF1004933DA /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				4C307A0E2C2180B0004933DA /* Services */,
+				4C307A002C217D45004933DA /* DetailRecipe */,
+				4C3079FF2C217D09004933DA /* MainRecipe */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		4C3079FE2C217CF5004933DA /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				4C307A162C218871004933DA /* RecipeAPIError.swift */,
+				4C307A1A2C218B8A004933DA /* HTTPDataDownloader.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		4C3079FF2C217D09004933DA /* MainRecipe */ = {
+			isa = PBXGroup;
+			children = (
+				4C307A032C217D67004933DA /* Model */,
+				4C307A012C217D5F004933DA /* View */,
+				4C307A022C217D62004933DA /* ViewModel */,
+			);
+			path = MainRecipe;
+			sourceTree = "<group>";
+		};
+		4C307A002C217D45004933DA /* DetailRecipe */ = {
+			isa = PBXGroup;
+			children = (
+				4C307A062C217D74004933DA /* Model */,
+				4C307A042C217D6C004933DA /* View */,
+				4C307A052C217D70004933DA /* ViewModel */,
+			);
+			path = DetailRecipe;
+			sourceTree = "<group>";
+		};
+		4C307A012C217D5F004933DA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4C307A072C217DC4004933DA /* MainRecipeView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4C307A022C217D62004933DA /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4C307A0C2C217FC8004933DA /* MainRecipeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		4C307A032C217D67004933DA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4C307A0A2C217E1C004933DA /* Meal.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4C307A042C217D6C004933DA /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4C307A052C217D70004933DA /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		4C307A062C217D74004933DA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4C307A0E2C2180B0004933DA /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				4C307A102C2180F7004933DA /* RecipeDataService.swift */,
+				4C307A122C218499004933DA /* MockRecipeDataService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +251,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C1F29872C2179A10032DBD1 /* ContentView.swift in Sources */,
 				4C1F29852C2179A10032DBD1 /* Fetch___iOS_Coding_ChallengeApp.swift in Sources */,
+				4C307A0D2C217FC8004933DA /* MainRecipeViewModel.swift in Sources */,
+				4C307A172C218871004933DA /* RecipeAPIError.swift in Sources */,
+				4C307A112C2180F7004933DA /* RecipeDataService.swift in Sources */,
+				4C307A1B2C218B8A004933DA /* HTTPDataDownloader.swift in Sources */,
+				4C307A132C218499004933DA /* MockRecipeDataService.swift in Sources */,
+				4C307A0B2C217E1C004933DA /* Meal.swift in Sources */,
+				4C307A082C217DC4004933DA /* MainRecipeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
