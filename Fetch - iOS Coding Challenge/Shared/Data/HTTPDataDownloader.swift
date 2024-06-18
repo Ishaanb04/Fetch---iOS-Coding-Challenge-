@@ -10,7 +10,17 @@ import Foundation
 protocol HTTPDataDownloader {}
 
 extension HTTPDataDownloader {
-    func getHTTPData<T: Decodable>(with url: String, as type: T.Type) async throws -> T {
+    func getHTTPDecodedData<T: Decodable>(with url: String, as type: T.Type) async throws -> T {
+        do {
+            let data = try await getHTTPData(with: url)
+            let jsonData = try JSONDecoder().decode(type, from: data)
+            return jsonData
+        } catch {
+            throw RecipeAPIError.decodingError
+        }
+    }
+
+    func getHTTPData(with url: String) async throws -> Data {
         guard let url = URL(string: url) else {
             throw RecipeAPIError.invalidURL
         }
@@ -24,12 +34,7 @@ extension HTTPDataDownloader {
             guard response.statusCode >= 200, response.statusCode < 300 else {
                 throw RecipeAPIError.invalidStatusCode(statusCode: response.statusCode)
             }
-            do {
-                let jsonData = try JSONDecoder().decode(type, from: data)
-                return jsonData
-            } catch {
-                throw RecipeAPIError.decodingError
-            }
+            return data
         } catch {
             throw RecipeAPIError.unknownError(error: error.localizedDescription)
         }

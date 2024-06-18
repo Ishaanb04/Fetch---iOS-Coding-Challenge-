@@ -11,7 +11,16 @@ struct MainRecipeView: View {
     @ObservedObject private var vm = MainRecipeViewModel(service: RecipeDataService())
     var body: some View {
         VStack {
-            Text("Hello World")
+            ScrollView {
+                VStack {
+                    LazyVGrid(columns: [.init(), .init()], content: {
+                        ForEach(vm.meals) { meal in
+                            MainMealView(service: vm.service, meal: meal)
+                        }
+                    })
+                }
+                .padding()
+            }
         }
         .task {
             await vm.fetchMeals()

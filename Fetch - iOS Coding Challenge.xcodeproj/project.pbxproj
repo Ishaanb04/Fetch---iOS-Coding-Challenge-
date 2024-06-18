@@ -17,6 +17,9 @@
 		4C307A132C218499004933DA /* MockRecipeDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C307A122C218499004933DA /* MockRecipeDataService.swift */; };
 		4C307A172C218871004933DA /* RecipeAPIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C307A162C218871004933DA /* RecipeAPIError.swift */; };
 		4C307A1B2C218B8A004933DA /* HTTPDataDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C307A1A2C218B8A004933DA /* HTTPDataDownloader.swift */; };
+		4C307A202C2192A0004933DA /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C307A1F2C2192A0004933DA /* ImageLoader.swift */; };
+		4C307A222C2192AD004933DA /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C307A212C2192AD004933DA /* ImageCache.swift */; };
+		4C307A242C219C13004933DA /* MainMealView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C307A232C219C13004933DA /* MainMealView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +34,9 @@
 		4C307A122C218499004933DA /* MockRecipeDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockRecipeDataService.swift; sourceTree = "<group>"; };
 		4C307A162C218871004933DA /* RecipeAPIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeAPIError.swift; sourceTree = "<group>"; };
 		4C307A1A2C218B8A004933DA /* HTTPDataDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPDataDownloader.swift; sourceTree = "<group>"; };
+		4C307A1F2C2192A0004933DA /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		4C307A212C2192AD004933DA /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
+		4C307A232C219C13004933DA /* MainMealView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMealView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,8 +107,8 @@
 		4C3079FE2C217CF5004933DA /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				4C307A162C218871004933DA /* RecipeAPIError.swift */,
-				4C307A1A2C218B8A004933DA /* HTTPDataDownloader.swift */,
+				4C307A1D2C219263004933DA /* Data */,
+				4C307A1C2C219257004933DA /* Error */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -131,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				4C307A072C217DC4004933DA /* MainRecipeView.swift */,
+				4C307A232C219C13004933DA /* MainMealView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -179,6 +186,24 @@
 				4C307A122C218499004933DA /* MockRecipeDataService.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		4C307A1C2C219257004933DA /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				4C307A162C218871004933DA /* RecipeAPIError.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		4C307A1D2C219263004933DA /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				4C307A212C2192AD004933DA /* ImageCache.swift */,
+				4C307A1F2C2192A0004933DA /* ImageLoader.swift */,
+				4C307A1A2C218B8A004933DA /* HTTPDataDownloader.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -251,11 +276,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C307A222C2192AD004933DA /* ImageCache.swift in Sources */,
+				4C307A242C219C13004933DA /* MainMealView.swift in Sources */,
 				4C1F29852C2179A10032DBD1 /* Fetch___iOS_Coding_ChallengeApp.swift in Sources */,
 				4C307A0D2C217FC8004933DA /* MainRecipeViewModel.swift in Sources */,
 				4C307A172C218871004933DA /* RecipeAPIError.swift in Sources */,
 				4C307A112C2180F7004933DA /* RecipeDataService.swift in Sources */,
 				4C307A1B2C218B8A004933DA /* HTTPDataDownloader.swift in Sources */,
+				4C307A202C2192A0004933DA /* ImageLoader.swift in Sources */,
 				4C307A132C218499004933DA /* MockRecipeDataService.swift in Sources */,
 				4C307A0B2C217E1C004933DA /* Meal.swift in Sources */,
 				4C307A082C217DC4004933DA /* MainRecipeView.swift in Sources */,

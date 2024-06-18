@@ -9,8 +9,9 @@ import Foundation
 
 class MainRecipeViewModel: ObservableObject {
     @Published var meals: [Meal] = []
-
-    private let service: RecipeDataServiceProtocol
+    @Published var errorMessage: String?
+    
+    let service: RecipeDataServiceProtocol
 
     init(service: RecipeDataServiceProtocol) {
         self.service = service
@@ -18,6 +19,15 @@ class MainRecipeViewModel: ObservableObject {
 
     @MainActor
     func fetchMeals() async {
-        meals = await service.fetchAllMeals()
+        do {
+            meals = try await service.fetchAllMeals()
+        } catch let error as RecipeAPIError {
+            errorMessage = error.description
+            print("DEBUG: \(error.description)")
+        } catch {
+            errorMessage = error.localizedDescription
+            print("DEBUG: \(error.localizedDescription)")
+        }
     }
+    
 }
